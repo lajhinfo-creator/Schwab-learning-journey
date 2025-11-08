@@ -35,7 +35,7 @@ body {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(56, 189, 248, 0.35), transparent 100%);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.35), transparent 0%);
   top: -140px;
   left: -80px;
   mix-blend-mode: screen;
@@ -47,7 +47,7 @@ body {
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(244, 114, 182, 0.30), transparent 100%);
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.30), transparent 0%);
   bottom: -120px;
   right: -60px;
   mix-blend-mode: screen;
