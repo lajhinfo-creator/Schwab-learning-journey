@@ -44,7 +44,7 @@ body {
   height: 420px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(56, 189, 248, 0.35), transparent 0%);
-  top: -250px;
+  top: -1050px;
   left: -80px;
   mix-blend-mode: screen;
 }
