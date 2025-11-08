@@ -20,13 +20,20 @@ body {
 
 .header {
   position: relative;
-  padding: 60px 60px 60px;
-  color: #f9fafb;
+  padding: 0; /* removes all internal spacing */
+  margin: 0; /* ensures no external gap from body */
+  height: 400px; /* or whatever height you want your hero image to be */
   overflow: hidden;
   background:
-    linear-gradient(to bottom right, rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.18)),
+    /* fully transparent overlay */
+    linear-gradient(
+      to bottom right,
+      rgba(15, 23, 42, 0), /* 0 = no tint at all */
+      rgba(15, 23, 42, 0)
+    ),
+    /* image touches the very top */
     url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image1.png")
-      center center / cover no-repeat;
+      top center / cover no-repeat;
 }
 
 .header::before {
