@@ -20,7 +20,7 @@ body {
 
 .header {
   position: relative;
-  padding: 110px 60px 85px;
+  padding: 40px 60px 35px;
   color: #f9fafb;
   overflow: hidden;
   background:
@@ -313,7 +313,7 @@ body {
 
 .footer {
   position: relative;
-  padding: 75px 40px 70px;
+  padding: 35px 40px 30px;
   background:
     linear-gradient(to top right, rgba(15, 23, 42, 0.45), rgba(30, 64, 175, 0.18)),
     url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image2.png")
