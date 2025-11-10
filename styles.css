@@ -475,3 +475,60 @@ body {
     display: none !important;
   }
 }
+
+/* ============ PRINT / PDF LAYOUT ============ */
+@page {
+  size: letter portrait;
+  margin: 0.25in;
+}
+
+@media print {
+
+  body {
+    background: #ffffff !important;
+  }
+
+  /* Keep everything as a single tight card */
+  .page-wrapper {
+    margin: 0 !important;
+    max-width: 7.5in;          /* fits Letter width */
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    transform: scale(0.86);    /* shrink to fit vertically */
+    transform-origin: top center;
+  }
+
+  /* Tighten internal spacing */
+  .main-card {
+    padding: 20px 24px !important;
+  }
+
+  .content-grid {
+    gap: 14px !important;
+  }
+
+  .section {
+    margin-bottom: 14px !important;
+  }
+
+  /* More compact footer so image+text still show */
+  .footer {
+    height: 220px !important;
+    padding: 16px 24px !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center 70% !important;
+  }
+
+  .footer-text {
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    max-width: 6.8in;
+  }
+
+  /* Hide the blue "Download as PDF" button on print */
+  #downloadPDF {
+    display: none !important;
+  }
+}
+
