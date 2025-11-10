@@ -103,11 +103,11 @@ body {
 
 /* SCHWAB LOGO BUTTON */
 .logo {
-  position: relative;
-  top: 28px;
-  right: 40px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   background: rgba(15, 23, 42, 0.85);
-  padding: 6px 18px;
+  padding: 6px 14px;
   border-radius: 999px;
   font-size: 11px;
   color: #e5e7eb;
@@ -115,7 +115,9 @@ body {
   letter-spacing: 0.16em;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.6);
   border: 1px solid rgba(148, 163, 184, 0.6);
-  z-index: 3;
+  width: auto;          /* prevents full width stretch */
+  display: inline-block; /* keeps it tight to content */
+  z-index: 3;           /* stays above background, below text */
 }
 
 /* ==============================
