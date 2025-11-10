@@ -363,7 +363,7 @@ body {
   width: 100%;
   height: 80vh; /* keeps a cinematic balance */
   background: #020617
-    url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image6.png")
+    url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image4.png")
       center/cover no-repeat;
   background-attachment: fixed;
   background-position: center 70%; /* shifts image upward to crop bottom */
@@ -476,7 +476,7 @@ body {
   }
 }
 
-/* ============ PRINT / PDF LAYOUT (FULL PAGE FIT) ============ */
+/* ================= PRINT / PDF LAYOUT ================== */
 @page {
   size: letter portrait;
   margin: 0;
@@ -484,55 +484,58 @@ body {
 
 @media print {
 
-  html, body {
+  html,
+  body {
     width: 100%;
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
-    background: white !important;
+    background: #ffffff !important;
   }
 
-  /* Expand main layout to edge-to-edge */
+  /* Make the one-pager fill the page but stay on a single sheet */
   .page-wrapper {
     margin: 0 !important;
     width: 100%;
     max-width: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    transform: scale(1.05); /* fills height and width */
+    transform: scale(0.96);           /* shrink just enough to fit */
     transform-origin: top center;
   }
 
-  /* Reduce vertical spacing inside */
-  .main-card,
+  /* Tighten spacing so footer can fit fully */
+  .main-card {
+    padding: 24px 28px 18px !important;
+  }
+
   .content-grid {
-    padding: 0 24px !important;
     gap: 12px !important;
   }
 
-  /* Tighten section spacing */
   .section {
     margin-bottom: 10px !important;
   }
 
-  /* Footer adjustments for balance */
+  /* Footer: slightly shorter in print so image + text fit cleanly */
   .footer {
-    height: 200px !important;
-    padding: 12px 24px !important;
+    height: 180px !important;
+    padding: 10px 28px !important;
     background-attachment: scroll !important;
     background-size: cover !important;
-    background-position: center 68% !important;
+    background-position: center 78% !important; /* nudge image up a bit */
   }
 
   .footer-text {
-    font-size: 12px !important;
+    font-size: 11.5px !important;
     line-height: 1.5 !important;
-    max-width: 7in;
+    max-width: 7.1in;
     margin: 0 auto;
   }
 
-  /* Hide the blue "Download as PDF" button */
+  /* Hide interactive-only elements */
   #downloadPDF {
     display: none !important;
   }
 }
+
