@@ -476,59 +476,63 @@ body {
   }
 }
 
-/* ============ PRINT / PDF LAYOUT ============ */
+/* ============ PRINT / PDF LAYOUT (FULL PAGE FIT) ============ */
 @page {
   size: letter portrait;
-  margin: 0.25in;
+  margin: 0;
 }
 
 @media print {
 
-  body {
-    background: #ffffff !important;
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
   }
 
-  /* Keep everything as a single tight card */
+  /* Expand main layout to edge-to-edge */
   .page-wrapper {
     margin: 0 !important;
-    max-width: 7.5in;          /* fits Letter width */
-    box-shadow: none !important;
+    width: 100%;
+    max-width: none !important;
     border-radius: 0 !important;
-    transform: scale(0.86);    /* shrink to fit vertically */
+    box-shadow: none !important;
+    transform: scale(1.05); /* fills height and width */
     transform-origin: top center;
   }
 
-  /* Tighten internal spacing */
-  .main-card {
-    padding: 20px 24px !important;
-  }
-
+  /* Reduce vertical spacing inside */
+  .main-card,
   .content-grid {
-    gap: 14px !important;
+    padding: 0 24px !important;
+    gap: 12px !important;
   }
 
+  /* Tighten section spacing */
   .section {
-    margin-bottom: 14px !important;
+    margin-bottom: 10px !important;
   }
 
-  /* More compact footer so image+text still show */
+  /* Footer adjustments for balance */
   .footer {
-    height: 220px !important;
-    padding: 16px 24px !important;
+    height: 200px !important;
+    padding: 12px 24px !important;
     background-attachment: scroll !important;
     background-size: cover !important;
-    background-position: center 70% !important;
+    background-position: center 68% !important;
   }
 
   .footer-text {
-    font-size: 11px !important;
+    font-size: 12px !important;
     line-height: 1.5 !important;
-    max-width: 6.8in;
+    max-width: 7in;
+    margin: 0 auto;
   }
 
-  /* Hide the blue "Download as PDF" button on print */
+  /* Hide the blue "Download as PDF" button */
   #downloadPDF {
     display: none !important;
   }
 }
-
