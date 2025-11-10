@@ -121,7 +121,10 @@ body {
 
 .subtitle {
   font-size: 18px;
-  color: #263442;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #0f172a;
   opacity: 0.95;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.6);
 }
