@@ -117,6 +117,10 @@ body {
   margin-bottom: 8px;
   line-height: 1.15;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  width: auto;          /* prevents full width stretch */
+  display: inline-block; /* keeps it tight to content */
+  z-index: 3;           /* stays above background, below text */
 }
 
 .subtitle {
@@ -127,6 +131,10 @@ body {
   color: #0f172a;
   opacity: 0.95;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  width: auto;          /* prevents full width stretch */
+  display: inline-block; /* keeps it tight to content */
+  z-index: 3;           /* stays above background, below text */
 }
 
 /* KEYFRAMES */
