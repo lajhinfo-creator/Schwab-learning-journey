@@ -112,6 +112,7 @@ body {
 
 .header h1 {
   font-size: 40px;
+  color: #e5e7eb;
   font-weight: 800;
   margin-bottom: 8px;
   line-height: 1.15;
@@ -119,6 +120,7 @@ body {
 
 .subtitle {
   font-size: 18px;
+  color: #e5e7eb;
   opacity: 0.95;
 }
 
