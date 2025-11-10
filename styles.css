@@ -361,7 +361,7 @@ body {
 .footer {
   position: relative;
   width: 100%;
-  height: 60vh; /* keeps a cinematic balance */
+  height: 100vh; /* keeps a cinematic balance */
   background: #020617
     url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image4.png")
       center/cover no-repeat;
