@@ -104,7 +104,7 @@ body {
 /* SCHWAB LOGO BUTTON */
 .logo {
   position: relative;
-  top: 15px;
+  top: 0px;
   right: 40px;
   background: rgba(15, 23, 42, 0.85);
   padding: 8px 20px;
