@@ -357,36 +357,38 @@ body {
   font-size: 14px;
 }
 
-/* FOOTER WITH IMAGE (SCREEN) */
+/* FOOTER WITH IMAGE — TEXT FIXED AT BOTTOM OF GRADIENT */
 .footer {
   position: relative;
+  display: flex;
+  align-items: flex-end; /* ensures content hugs bottom */
+  justify-content: center;
   background: #020617
     url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image6.png")
       center/cover no-repeat;
   color: white;
-  padding: 16px 40px 24px;
-  font-size: 13px;
+  height: 240px;
+  padding: 0 40px 28px; /* bottom padding for breathing room */
   text-align: center;
-  height: 240px;            /* fixed height to avoid extra white */
   overflow: hidden;
 }
 
 .footer-overlay {
   position: absolute;
   inset: 0;
-  /* gradient from bottom upward so the text sits on a soft fade */
   background: linear-gradient(to top, rgba(15, 23, 42, 0.78), transparent 55%);
+  z-index: 1;
 }
 
 .footer-text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 820px;
-  margin: 0 auto;
   line-height: 1.7;
+  font-size: 13px;
+  color: #f3f4f6;
+  margin: 0 auto;
 }
-
-
 
 /* REVEAL ANIMATION */
 
