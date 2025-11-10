@@ -506,7 +506,7 @@ body {
     padding: 10px 28px !important;
     background-attachment: scroll !important;
     background-size: cover !important;
-    background-position: center 70% !important; /* nudge image up a bit */
+    background-position: center 40% !important; /* nudge image up a bit */
   }
 
   .footer-text {
