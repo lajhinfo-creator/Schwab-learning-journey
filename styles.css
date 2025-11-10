@@ -120,7 +120,7 @@ body {
 
 .subtitle {
   font-size: 18px;
-  color: #e5e7eb;
+  color: #263442;
   opacity: 0.95;
 }
 
@@ -525,63 +525,3 @@ body {
     display: none !important;
   }
 }
-
-/* =========================================
-   PRINT: FORCE ONE-PAGE LAYOUT (LETTER)
-   ========================================= */
-@media print {
-  @page {
-    size: letter portrait;
-    margin: 0;
-  }
-
-  html,
-  body {
-    width: 8.5in;
-    height: 11in;
-    margin: 0;
-    padding: 0;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    background: #020617;
-  }
-
-  /* Main card wrapper – shrink like "Scale 88%" */
-  .page-wrapper {
-    margin: 0 auto;
-    width: 8.5in;
-    /* if you want to be extra safe: max-height: 11in; */
-    transform: scale(0.88);        /* ≈ your 88% setting */
-    transform-origin: top center;  /* keeps it centered on the page */
-  }
-
-  /* Remove outer page padding / shadows in print */
-  .outer-shell,
-  .page-shell {
-    padding: 0;
-    box-shadow: none;
-    margin: 0;
-  }
-
-  /* Hide the floating download button in the PDF */
-  .download-btn {
-    display: none !important;
-  }
-
-  /* Optional: tighten vertical spacing a hair if needed */
-  .header {
-    padding-top: 40px;
-    padding-bottom: 32px;
-  }
-
-  .content-columns {
-    margin-top: 28px;
-    margin-bottom: 24px;
-  }
-
-  .footer {
-    height: 200px; /* keep footer image but save a bit of space */
-  }
-}
-
-
