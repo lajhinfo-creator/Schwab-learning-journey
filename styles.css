@@ -103,7 +103,7 @@ body {
 
 /* SCHWAB LOGO BUTTON */
 .logo {
-  position: absolute;
+  position: relative;
   top: 28px;
   right: 40px;
   background: rgba(15, 23, 42, 0.85);
@@ -341,7 +341,7 @@ body {
   align-items: flex-end; /* Hug bottom */
   justify-content: center;
   background: #020617
-    url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image2.png")
+    url("https://raw.githubusercontent.com/lajhinfo-creator/Schwab-learning-journey/main/Image6.png")
       center/cover no-repeat;
   color: white;
   height: 60vh; /* balanced visible area */
