@@ -121,6 +121,28 @@ body {
   z-index: 3;           /* stays above background, below text */
 }
 
+/* HEADER IMAGE OVERLAY (COLOR + TRANSPARENCY CONTROL) */
+.header-overlay {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(15, 23, 42, 0.45); 
+  /* ↑ COLOR + OPACITY:
+     - change the rgb values for color
+     - change the 0.45 for transparency (0 = invisible, 1 = solid) */
+  z-index: 2;
+  pointer-events: none; /* don’t block clicks */
+}
+
+/* make sure header text + logo sit above the overlay */
+.header .logo,
+.header .header-tag,
+.header h1,
+.header .subtitle {
+  position: relative;
+  z-index: 3;
+}
+
+
 /* ==============================
    CONTENT LAYOUT
 ============================== */
